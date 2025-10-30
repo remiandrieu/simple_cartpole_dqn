@@ -33,7 +33,7 @@ def visualize_agent(model_path, num_episodes=5, delay=0.02):
             
             if done:
                 total_rewards.append(total_reward)
-                print(f"Épisode {episode + 1}/{num_episodes} - Reward: {total_reward:.0f} - Steps: {steps}")
+                print(f"Episode {episode + 1}/{num_episodes} - Reward: {total_reward:.0f} - Steps: {steps}")
                 break
     
     env.close()
@@ -52,4 +52,4 @@ if __name__ == "__main__":
         visualize_agent(model_path)
     else:
         print("How to use:")
-        print(f"  python visualize.py [chemin_modele.keras]")
+        print(f"  python visualize.py [model_path.keras]")
