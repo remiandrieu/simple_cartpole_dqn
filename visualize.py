@@ -24,7 +24,7 @@ def visualize_agent(model_path, num_episodes=5, delay=0.02):
             action = agent.act(state)
             next_state, reward, done, _, _ = env.step(action)
             total_reward += reward
-            if total_reward > 200 :
+            if total_reward >= 500 :
                 done = True
             steps += 1
             state = next_state
